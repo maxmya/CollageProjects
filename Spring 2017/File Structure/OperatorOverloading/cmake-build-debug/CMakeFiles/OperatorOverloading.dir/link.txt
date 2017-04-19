@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/OperatorOverloading.dir/main.cpp.o CMakeFiles/OperatorOverloading.dir/Temp.cpp.o  -o OperatorOverloading 

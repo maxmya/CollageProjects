@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+M:/Collage Projects/Spring 2017/File Structure/First Lab Tasks/Problem_3.12/Account.cpp
+Account.h
+M:/Collage Projects/Spring 2017/File Structure/First Lab Tasks/Problem_3.12/Account.h
+iostream
+-
+cstdio
+-
+
+M:/Collage Projects/Spring 2017/File Structure/First Lab Tasks/Problem_3.12/Account.h
+

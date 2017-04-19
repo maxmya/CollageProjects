@@ -1,0 +1,4 @@
+/opt/clion-2016.3.5/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/maxmya/Projects/Collage Projects/Spring 2017/File Structure/OperatorOverloading"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /media/maxmya/Projects/Collage Projects/Spring 2017/File Structure/OperatorOverloading/cmake-build-debug

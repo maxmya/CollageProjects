@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+M:/Collage Projects/Spring 2017/File Structure/Secound Task/IntegerSet.cpp
+IntegerSet.h
+M:/Collage Projects/Spring 2017/File Structure/Secound Task/IntegerSet.h
+iostream
+-
+
+M:/Collage Projects/Spring 2017/File Structure/Secound Task/IntegerSet.h
+
+M:/Collage Projects/Spring 2017/File Structure/Secound Task/main.cpp
+iostream
+-
+IntegerSet.h
+M:/Collage Projects/Spring 2017/File Structure/Secound Task/IntegerSet.h
+
