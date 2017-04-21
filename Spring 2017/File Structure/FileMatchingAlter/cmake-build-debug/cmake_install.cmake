@@ -1,4 +1,4 @@
-# Install script for directory: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching
+# Install script for directory: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

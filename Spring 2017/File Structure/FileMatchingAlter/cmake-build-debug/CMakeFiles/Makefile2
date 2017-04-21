@@ -54,45 +54,45 @@ RM = /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching"
+CMAKE_SOURCE_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug"
+CMAKE_BINARY_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/FileMatching.dir
+# Target rules for target CMakeFiles/FileMatchingAlter.dir
 
 # All Build rule for target.
-CMakeFiles/FileMatching.dir/all:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/depend
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target FileMatching"
-.PHONY : CMakeFiles/FileMatching.dir/all
+CMakeFiles/FileMatchingAlter.dir/all:
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/depend
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target FileMatchingAlter"
+.PHONY : CMakeFiles/FileMatchingAlter.dir/all
 
 # Include target in all.
-all: CMakeFiles/FileMatching.dir/all
+all: CMakeFiles/FileMatchingAlter.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FileMatching.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FileMatching.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/FileMatching.dir/rule
+CMakeFiles/FileMatchingAlter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FileMatchingAlter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/FileMatchingAlter.dir/rule
 
 # Convenience name for target.
-FileMatching: CMakeFiles/FileMatching.dir/rule
+FileMatchingAlter: CMakeFiles/FileMatchingAlter.dir/rule
 
-.PHONY : FileMatching
-
-# clean rule for target.
-CMakeFiles/FileMatching.dir/clean:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/clean
-.PHONY : CMakeFiles/FileMatching.dir/clean
+.PHONY : FileMatchingAlter
 
 # clean rule for target.
-clean: CMakeFiles/FileMatching.dir/clean
+CMakeFiles/FileMatchingAlter.dir/clean:
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/clean
+.PHONY : CMakeFiles/FileMatchingAlter.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/FileMatchingAlter.dir/clean
 
 .PHONY : clean
 

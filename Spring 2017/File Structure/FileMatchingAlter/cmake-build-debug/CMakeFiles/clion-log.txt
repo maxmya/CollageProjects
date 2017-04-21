@@ -1,4 +1,4 @@
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching"
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter"
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug
+-- Build files have been written to: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug

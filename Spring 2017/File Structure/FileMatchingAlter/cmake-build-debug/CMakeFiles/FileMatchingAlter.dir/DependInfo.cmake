@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/main.cpp" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/FileMatching.dir/main.cpp.o"
+  "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/main.cpp" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/FileMatchingAlter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

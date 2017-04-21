@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/3.7.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/3.7.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/3.7.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/3.7.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_864a8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_864a8.dir/build.make CMakeFiles/cmTC_864a8.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_864a8.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_864a8.dir/testCCompiler.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_864a8
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_864a8.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_864a8.dir/testCCompiler.c.o  -o cmTC_864a8 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_4803c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4803c.dir/build.make CMakeFiles/cmTC_4803c.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4803c.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4803c.dir/testCCompiler.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_4803c
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4803c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4803c.dir/testCCompiler.c.o  -o cmTC_4803c 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_04f0c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_04f0c.dir/build.make CMakeFiles/cmTC_04f0c.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o   -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_04f0c
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04f0c.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o  -o cmTC_04f0c  
+Run Build Command:"/usr/bin/make" "cmTC_1b518/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1b518.dir/build.make CMakeFiles/cmTC_1b518.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o   -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1b518
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b518.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o  -o cmTC_1b518  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04f0c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccifD7MO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_04f0c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b518' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccecnb3T.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b518 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_04f0c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_04f0c.dir/build.make CMakeFiles/cmTC_04f0c.dir/build]
-  ignore line: [make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o   -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_04f0c]
-  ignore line: [/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04f0c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o  -o cmTC_04f0c  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1b518/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1b518.dir/build.make CMakeFiles/cmTC_1b518.dir/build]
+  ignore line: [make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o   -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1b518]
+  ignore line: [/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b518.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o  -o cmTC_1b518  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_04f0c' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccifD7MO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_04f0c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b518' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccecnb3T.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b518 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccifD7MO.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccecnb3T.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_04f0c] ==> ignore
+    arg [cmTC_1b518] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_04f0c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1b518.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -152,17 +152,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_33395/fast"
-/usr/bin/make -f CMakeFiles/cmTC_33395.dir/build.make CMakeFiles/cmTC_33395.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_33395.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_33395.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_33395
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33395.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_33395.dir/feature_tests.c.o  -o cmTC_33395 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_4a5ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a5ef.dir/build.make CMakeFiles/cmTC_4a5ef.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a5ef.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_4a5ef.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_4a5ef
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a5ef.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_4a5ef.dir/feature_tests.c.o  -o cmTC_4a5ef 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -172,17 +172,17 @@ make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProje
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ad2a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1ad2a.dir/build.make CMakeFiles/cmTC_1ad2a.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1ad2a.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_1ad2a.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_1ad2a
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ad2a.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_1ad2a.dir/feature_tests.c.o  -o cmTC_1ad2a 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_f03f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f03f7.dir/build.make CMakeFiles/cmTC_f03f7.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f03f7.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_f03f7.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_f03f7
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f03f7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_f03f7.dir/feature_tests.c.o  -o cmTC_f03f7 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -192,17 +192,17 @@ make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProje
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e07ab/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e07ab.dir/build.make CMakeFiles/cmTC_e07ab.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e07ab.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_e07ab.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_e07ab
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e07ab.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_e07ab.dir/feature_tests.c.o  -o cmTC_e07ab 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b1290/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1290.dir/build.make CMakeFiles/cmTC_b1290.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1290.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_b1290.dir/feature_tests.c.o   -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.c"
+Linking C executable cmTC_b1290
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1290.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b1290.dir/feature_tests.c.o  -o cmTC_b1290 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -210,30 +210,30 @@ make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProje
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d518d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d518d.dir/build.make CMakeFiles/cmTC_d518d.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d518d.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_d518d.dir/testCXXCompiler.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_d518d
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d518d.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_d518d.dir/testCXXCompiler.cxx.o  -o cmTC_d518d 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d9338/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d9338.dir/build.make CMakeFiles/cmTC_d9338.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d9338.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_d9338.dir/testCXXCompiler.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_d9338
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9338.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_d9338.dir/testCXXCompiler.cxx.o  -o cmTC_d9338 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d91a6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d91a6.dir/build.make CMakeFiles/cmTC_d91a6.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_d91a6
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d91a6.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d91a6  
+Run Build Command:"/usr/bin/make" "cmTC_03ea3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03ea3.dir/build.make CMakeFiles/cmTC_03ea3.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_03ea3
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ea3.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_03ea3  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -243,23 +243,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d91a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccB0QDLg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d91a6 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_03ea3' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLBgVFh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_03ea3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d91a6/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d91a6.dir/build.make CMakeFiles/cmTC_d91a6.dir/build]
-  ignore line: [make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_d91a6]
-  ignore line: [/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d91a6.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d91a6  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_03ea3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_03ea3.dir/build.make CMakeFiles/cmTC_03ea3.dir/build]
+  ignore line: [make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o -c /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_03ea3]
+  ignore line: [/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03ea3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_03ea3  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -269,13 +269,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d91a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccB0QDLg.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d91a6 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_03ea3' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccLBgVFh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_03ea3 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccB0QDLg.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccLBgVFh.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d91a6] ==> ignore
+    arg [cmTC_03ea3] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_d91a6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_03ea3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -334,17 +334,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e901e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e901e.dir/build.make CMakeFiles/cmTC_e901e.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e901e.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_e901e.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_e901e
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e901e.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_e901e.dir/feature_tests.cxx.o  -o cmTC_e901e 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8bb49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bb49.dir/build.make CMakeFiles/cmTC_8bb49.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8bb49.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_8bb49.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_8bb49
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bb49.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_8bb49.dir/feature_tests.cxx.o  -o cmTC_8bb49 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -407,17 +407,17 @@ make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProje
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_86111/fast"
-/usr/bin/make -f CMakeFiles/cmTC_86111.dir/build.make CMakeFiles/cmTC_86111.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_86111.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_86111.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_86111
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86111.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_86111.dir/feature_tests.cxx.o  -o cmTC_86111 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_364ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_364ff.dir/build.make CMakeFiles/cmTC_364ff.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_364ff.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_364ff.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_364ff
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_364ff.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_364ff.dir/feature_tests.cxx.o  -o cmTC_364ff 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -480,17 +480,17 @@ make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProje
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_46a64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_46a64.dir/build.make CMakeFiles/cmTC_46a64.dir/build
-make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_46a64.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_46a64.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_46a64
-/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46a64.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_46a64.dir/feature_tests.cxx.o  -o cmTC_46a64 
-make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_57885/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57885.dir/build.make CMakeFiles/cmTC_57885.dir/build
+make[1]: Entering directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57885.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_57885.dir/feature_tests.cxx.o -c "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/feature_tests.cxx"
+Linking CXX executable cmTC_57885
+/opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57885.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_57885.dir/feature_tests.cxx.o  -o cmTC_57885 
+make[1]: Leaving directory '/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -48,10 +48,10 @@ RM = /opt/Jetbrains/apps/CLion/ch-0/171.4073.41/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching"
+CMAKE_SOURCE_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug"
+CMAKE_BINARY_DIR = "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatching/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileMatchingAlter/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FileMatching
+# Target rules for targets named FileMatchingAlter
 
 # Build rule for target.
-FileMatching: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FileMatching
-.PHONY : FileMatching
+FileMatchingAlter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FileMatchingAlter
+.PHONY : FileMatchingAlter
 
 # fast build rule for target.
-FileMatching/fast:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/build
-.PHONY : FileMatching/fast
+FileMatchingAlter/fast:
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/build
+.PHONY : FileMatchingAlter/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/FileMatching.dir/build.make CMakeFiles/FileMatching.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/FileMatchingAlter.dir/build.make CMakeFiles/FileMatchingAlter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... FileMatching"
+	@echo "... FileMatchingAlter"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
