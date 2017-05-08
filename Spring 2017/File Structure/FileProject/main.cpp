@@ -42,9 +42,13 @@ enum Choices {
     PRINT = 1, UPDATE, NEW, DELETE, BACKUP, RESTORE, CreateindexFiles, TextFilesforIndex, END
 };
 
+
+
+
 void checkFile() {
 
-    fstream inOutCredit("credit.dat", ios::in | ios::out | ios::binary);
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
+    fstream inOutCredit(path+"credit.dat", ios::in | ios::out | ios::binary);
 
     ClientData client;
 
@@ -53,7 +57,7 @@ void checkFile() {
     if (!inOutCredit) {
 
 
-        fstream inOutCredit1("credit.dat", ios::out | ios::binary);
+        fstream inOutCredit1(path+"credit.dat", ios::out | ios::binary);
 
         while (counter <= 100) {
 
@@ -74,10 +78,12 @@ void checkFile() {
 }
 
 int main() {
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
+
     checkFile();
     // open file for reading and writing 
 
-    fstream inOutCredit("credit.dat", ios::in | ios::out | ios::binary);
+    fstream inOutCredit(path+"credit.dat", ios::in | ios::out | ios::binary);
 
 
     ClientData blankClient;
@@ -161,8 +167,10 @@ int enterChoice() {
 // create formatted text file for printing
 
 void createTextFile(fstream & readFromFile) {
-    // create text file                            
-    ofstream outPrintFile("print.txt", ios::out);
+    // create text file
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
+
+    ofstream outPrintFile(path+"print.txt", ios::out);
 
     // exit program if ofstream cannot create file
     if (!outPrintFile) {
@@ -347,32 +355,37 @@ int getAccount(const char * const prompt) {
 } // end function getAccount
 
 void BackupData() {
-    std::ifstream srce("credit.dat", std::ios::binary);
-    std::ofstream dest("backup.dat", std::ios::binary);
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
+
+    std::ifstream srce(path+"credit.dat", std::ios::binary);
+    std::ofstream dest(path+"backup.dat", std::ios::binary);
     dest << srce.rdbuf();
     cout << "success BackupData" << endl;
 }
 
 void RestoreData() {
-    std::ifstream sr("backup.dat", std::ios::binary);
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
+
+    std::ifstream sr(path+"backup.dat", std::ios::binary);
     if (!sr) {
         cerr << "Backup file dosen't exist ,can't do restoration" << endl;
         return;
     }
-    std::ofstream dest("credit.dat", std::ios::binary);
+    std::ofstream dest(path+"credit.dat", std::ios::binary);
     dest << sr.rdbuf();
     cout << "success RestoreData" << endl;
 }
 
 void CreateIndexFiles(fstream &fileData) {
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
 
     int accountNumber, offs, countt = 0, indexx = 1;
     string *Array = new string[101];
     ClientData client;
     IndexRecord index;
     SecondaryRecord Secondary;
-    fstream indexPrimary("primary_index.dat", ios::out | ios::binary);
-    fstream indexSecondary("secondary_index.dat", ios::out | ios::binary);
+    fstream indexPrimary(path+"primary_index.dat", ios::out | ios::binary|ios::trunc);
+    fstream indexSecondary(path+"secondary_index.dat", ios::out | ios::binary|ios::trunc);
 
     fileData.read(reinterpret_cast<char *> (&client), sizeof ( ClientData));
     fileData.clear();
@@ -437,14 +450,15 @@ string NumberToString(int Number) {
 }
 
 void CreateTextFilesforIndexFiles() {
+    string path = "//media//maxmya//Projects//Collage Projects//CollageProjects//Spring 2017//File Structure//FileProject//";
 
-    fstream readFromFile("primary_index.dat", ios::in | ios::binary);
+    fstream readFromFile(path+"primary_index.dat", ios::in | ios::binary);
 
-    fstream readFromFile2("secondary_index.dat", ios::in | ios::binary);
+    fstream readFromFile2(path+"secondary_index.dat", ios::in | ios::binary);
     // create text file
-    ofstream outPrintFile("primary_index.txt", ios::out);
+    ofstream outPrintFile(path+"primary_index.txt", ios::out);
     // create text file
-    ofstream secondaryText("secondary_index.txt", ios::out);
+    ofstream secondaryText(path+"secondary_index.txt", ios::out);
 
     // exit program if ofstream cannot create file
     if (!outPrintFile || !readFromFile) {
@@ -491,6 +505,7 @@ void CreateTextFilesforIndexFiles() {
         readFromFile2.read(reinterpret_cast<char *> (&Secondary), sizeof ( SecondaryRecord));
 
     }
+
 
 
 } // end function createTextFile
