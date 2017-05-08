@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/FileProject.dir/main.cpp.o CMakeFiles/FileProject.dir/SecondaryRecord.cpp.o CMakeFiles/FileProject.dir/IndexRecord.cpp.o CMakeFiles/FileProject.dir/ClientData.cpp.o  -o FileProject 

@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/ClientData.cpp
+ClientData.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/ClientData.h
+string
+-
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/ClientData.h
+string
+-
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/IndexRecord.cpp
+IndexRecord.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/IndexRecord.h
+string
+-
+cstring
+-
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/IndexRecord.h
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/SecondaryRecord.cpp
+string
+-
+cstring
+-
+SecondaryRecord.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/SecondaryRecord.h
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/SecondaryRecord.h
+string
+-
+
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/main.cpp
+iostream
+-
+fstream
+-
+iomanip
+-
+cstdlib
+-
+string
+-
+sstream
+-
+ClientData.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/ClientData.h
+IndexRecord.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/IndexRecord.h
+SecondaryRecord.h
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/FileProject/SecondaryRecord.h
+
