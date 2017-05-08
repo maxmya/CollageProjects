@@ -1,4 +1,0 @@
-/media/maxmya/Projects/Collage Projects/Spring 2017/File Structure/FileMatching/main.cpp: In function ‘int main()’:
-/media/maxmya/Projects/Collage Projects/Spring 2017/File Structure/FileMatching/main.cpp:20:1: error: ‘of’ was not declared in this scope
- of
- ^

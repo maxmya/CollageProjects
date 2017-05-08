@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "M:/Collage Projects/Spring 2017/File Structure/Secound Task/IntegerSet.cpp" "M:/Collage Projects/Spring 2017/File Structure/Secound Task/cmake-build-debug/CMakeFiles/Secound_Task.dir/IntegerSet.cpp.obj"
-  "M:/Collage Projects/Spring 2017/File Structure/Secound Task/main.cpp" "M:/Collage Projects/Spring 2017/File Structure/Secound Task/cmake-build-debug/CMakeFiles/Secound_Task.dir/main.cpp.obj"
+  "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Secound Task/IntegerSet.cpp" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Secound Task/cmake-build-debug/CMakeFiles/Secound_Task.dir/IntegerSet.cpp.o"
+  "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Secound Task/main.cpp" "/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Secound Task/cmake-build-debug/CMakeFiles/Secound_Task.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

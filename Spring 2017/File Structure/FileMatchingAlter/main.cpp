@@ -30,7 +30,7 @@ int main() {
 
     while (!inOldMaster.eof() && !inTransaction.eof()) {
 
-        inOldMaster >> oldMastAccountNum >> firstName >> secondName >> currentBalance;
+            inOldMaster >> oldMastAccountNum >> firstName >> secondName >> currentBalance;
 
         if (transAccountNum < oldMastAccountNum)
 
@@ -42,6 +42,7 @@ int main() {
 
             inTransaction >> transAccountNum >> dollarAmount;
         }
+
         if (((oldMastAccountNum > transAccountNum) && !inTransaction.eof()) || inOldMaster.eof()) {
             cerr << "Unmatched transaction record for account number: " << transAccountNum << endl;
         }
@@ -52,4 +53,3 @@ int main() {
     }
     return 0;
 }
-

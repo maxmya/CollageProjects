@@ -8,8 +8,8 @@
 using namespace std;
 
 IntegerSet::IntegerSet() {
-    this->elements = new bool[100];
-    for (int i = 0; i < 100; ++i) {
+    this->elements = new bool[101];
+    for (int i = 0; i < 101; ++i) {
         elements[i] = false;
     }
     arrSize = 100;
@@ -23,9 +23,9 @@ IntegerSet::IntegerSet(const IntegerSet &ref) {
 
 IntegerSet::IntegerSet(int arr[], int size) {
 
-    this->elements = new bool[100];
-    this->arrSize = 100;
-    for (int j = 0; j < arrSize; ++j) {
+    this->elements = new bool[101];
+    this->arrSize = 101;
+    for (int j = 0; j < arrSize;++j) {
         elements[j] = false;
     }
 

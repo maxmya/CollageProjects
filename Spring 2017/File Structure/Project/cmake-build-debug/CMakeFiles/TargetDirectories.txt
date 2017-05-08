@@ -1,0 +1,3 @@
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/maxmya/Projects/Collage Projects/CollageProjects/Spring 2017/File Structure/Project/cmake-build-debug/CMakeFiles/Project.dir
