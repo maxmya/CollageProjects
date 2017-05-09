@@ -1,4 +1,12 @@
-f = open("tweetManual_atef.txt")
 
-print "".join(line for line in f if not line.isspace())
+import json
 
+
+
+
+f = open("twitter.txt","r")
+
+
+for i in f:
+    if '{' in i :
+      print json.loads(i)["text"].encode('utf-8')
