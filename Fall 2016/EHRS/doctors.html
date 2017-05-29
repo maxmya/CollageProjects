@@ -1,0 +1,161 @@
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script src="js/firebase_init.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<style>
+    body {
+        margin: 50px;
+        background: url("images/slide1.png") no-repeat fixed center/cover;
+        font-family: Calibri;
+        font-size: large;
+    }
+</style>
+<body>
+<h1>WELCOME DR</h1>
+Select Patient Here
+<select id="selectP">
+
+
+</select>
+<br>
+<br>
+<button id="viewVists">View Last Visits For Selected Patient</button>
+<div id="visitsD"></div>
+<h3>New Visit</h3>
+<div id="date"></div>
+<br>
+<label for="diagnoseByDr">Diagnose</label>
+<br>
+<textarea type="text" rows="3" id="diagnoseByDr"></textarea>
+<br>
+<label for="prescriptionByDr">prescription</label>
+<br>
+<textarea type="text" rows="3" id="prescriptionByDr"></textarea>
+<br>
+
+<label for="labAssignmentByDr">Assign Lab Test</label>
+<br>
+<textarea type="text" rows="3" id="labAssignmentByDr"></textarea>
+<br>
+<button id="submitVisit">Submit Visit</button>
+<button id="signOut" style="position: absolute ; right: 1px; bottom:1px;">Log Out</button>
+<script>
+
+    document.querySelector('#signOut').addEventListener('click', function () {
+        firebase.auth().signOut().then(function () {
+            window.location.replace("index.html");
+            window.location.replace("index.html");
+
+        }, function (error) {
+            // An error happened.
+        });
+    })
+    var d = new Date();
+    document.querySelector('#date').innerHTML = "Date : " + d.toDateString();
+
+
+    var dataRef = firebase.database().ref('patients');
+    var dataRef2 = firebase.database().ref('visits');
+
+    var selectTool = document.querySelector('#selectP');
+    dataRef.once('value').then(function (data) {
+
+        data.forEach(function (datum) {
+
+            var dataVal = datum.val();
+            var pName = dataVal.name;
+
+            var currentPatient = document.createElement('option');
+            currentPatient.setAttribute('value', datum.key);
+            currentPatient.appendChild(document.createTextNode(pName));
+            selectTool.appendChild(currentPatient);
+
+        })
+
+    });
+
+    document.querySelector('#viewVists').addEventListener('click', function () {
+
+        var pKey = selectTool.value;
+        var visits = document.querySelector('#visitsD');
+        dataRef2.once('value').then(function (data) {
+
+            data.forEach(function (datum) {
+                var dataVal = datum.val();
+
+                if (pKey == dataVal.id) {
+
+                    var date = dataVal.date;
+                    var diagnose = dataVal.diagnose;
+                    var prescription = dataVal.prescription;
+                    var labAssignments = dataVal.labAssignments;
+
+                    visits.appendChild(document.createElement('br'));
+                    visits.appendChild(document.createTextNode("Date of Visit : ".concat(date)));
+                    visits.appendChild(document.createElement('br'));
+                    visits.appendChild(document.createTextNode("Diagnose : ".concat(diagnose)));
+                    visits.appendChild(document.createElement('br'));
+                    visits.appendChild(document.createTextNode("Prescription : ".concat(prescription)));
+                    visits.appendChild(document.createElement('br'));
+                    visits.appendChild(document.createTextNode("Lab Assignments : ".concat(labAssignments)));
+                    visits.appendChild(document.createElement('br'));
+                    visits.appendChild(document.createTextNode("-----------------------------------"));
+
+
+                }
+
+            })
+        })
+
+
+    })
+
+
+    document.querySelector('#submitVisit').addEventListener('click', function () {
+
+        var pID = selectTool.value;
+        if (diagnoseByDr.value != "" && prescriptionByDr.value != "" && labAssignmentByDr.value != "") {
+            var currentVisit = {
+                    id: pID,
+                    diagnose: diagnoseByDr.value,
+                    prescription: prescriptionByDr.value,
+                    date: d.toDateString(),
+                    labAssignments: labAssignmentByDr.value
+                }
+                ;
+            dataRef2.push().set(currentVisit);
+            prescriptionByDr.value = "";
+            diagnoseByDr.value = "";
+            labAssignmentByDr.value = "";
+            alert("Visit Submitted Successfully");
+
+
+        } else {
+            alert("Please Fill Data ")
+        }
+    })
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+
+
+        } else {
+
+
+            window.location.replace("login.html");
+
+        }
+    });
+
+
+</script>
+</body>

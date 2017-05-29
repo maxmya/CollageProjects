@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-red.min.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <meta charset="UTF-8">
+    <style>
+
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
+    <title>Hosbitalia</title>
+</head>
+
+<body>
+
+<div class="mdl-card mdl-shadow--4dp centered">
+
+    <div class="mdl-card__title" style="margin-left: auto;margin-right: auto">
+        <img src="images/logo.png" style="width: 60px ">
+        <h1 class="mdl-card__title-text" style="color: #E41456;margin-bottom: 8px">Hosbitalia</h1>
+    </div>
+
+    <div class="mdl-card__supporting-text" style="margin-top: 20px">
+        Welcome , Checking Authority ...
+    </div>
+
+    <div class="mdl-layout-spacer"></div>
+
+    <div class="mdl-card__media mdl-cell--middle">
+        <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+    </div>
+
+
+</div>
+
+
+<dialog class="mdl-dialog" id="err_dialog">
+    <h4 class="mdl-dialog__title">ERROR</h4>
+    <div class="mdl-dialog__content">
+        <p id="err">
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" id="close" class="mdl-button">Dismiss</button>
+    </div>
+</dialog>
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script src="js/index_checker.js"></script>
+</body>
+</html>

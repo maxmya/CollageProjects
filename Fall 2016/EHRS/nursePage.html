@@ -1,0 +1,479 @@
+<link href="css/material.min.css">
+<head>
+    <style>
+
+
+        .mdl-layout__drawer {
+            width: 400px;
+            left: -250px;
+        }
+
+        .mdl-layout__drawer.is-visible {
+            left: 0;
+        }
+
+        .fly {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+
+        .topy {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 120px;
+            z-index: 900;
+        }
+
+        .cent {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rgt {
+            left: 89%;
+        }
+
+        .dialog_sizer {
+            overflow: auto;
+            height: 500px;
+            width: 850px;
+        }
+
+        .dialog_sizey {
+            overflow: auto;
+            width: 650px;
+        }
+
+        body.blocked {
+            overflow: auto;
+        }
+
+        .solve {
+            overflow: visible;
+        }
+
+        .hover_ob_changer {
+
+            opacity: 0.2;
+        }
+
+        button.hover_ob_changer:hover {
+
+            opacity: 1;
+
+        }
+
+        .mdl-card--horizontal {
+            flex-direction: column;
+            height: 1vh;
+            padding-left: 150px;
+            width: 100%;
+        }
+
+        .mdl-card--horizontal .mdl-card__media {
+            left: 0;
+            position: absolute;
+            width: 100px;
+        }
+
+        .mdl-card--horizontal .mdl-card__supporting-text {
+            flex: 1 1 auto;
+            width: auto;
+        }
+
+        .mdl-card--horizontal-2 {
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 0px;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__title {
+            align-items: flex-start;
+            flex-direction: column;
+            flex: 1 auto;
+            float: left;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__title-text {
+            align-self: flex-start;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__media {
+            flex: 0 auto;
+            float: right;
+            height: 112px;
+            margin: 16px 16px 0 0;
+            width: 112px;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__actions {
+            clear: both;
+            flex: 1 auto;
+        }
+
+        .al {
+            margin: 20px;
+        }
+
+        .imageSizer {
+            width: 150px;
+            height: 150px;
+        }
+
+        .topy2 {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 200px;
+            z-index: 900;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<main id="mainCardNu" class="solve">
+
+    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp"
+           style="width: 700px ; margin-left: auto;margin-right: auto">
+        <thead>
+        <tr>
+            <th class="mdl-data-table__cell--non-numeric"> nurse Name</th>
+            <th class="mdl-data-table__cell--non-numeric"> ID</th>
+            <th class="mdl-data-table__cell--non-numeric"> Phone</th>
+            <th class="mdl-data-table__cell--non-numeric"> Email</th>
+
+        </tr>
+        </thead>
+        <tbody id="tableBodyNu">
+
+        </tbody>
+    </table>
+
+</main>
+
+
+<dialog class="mdl-dialog mdl-js-dialog dialog_sizer" id="drivers_list">
+
+    <h3 class="mdl-dialog__title">Retrieve nurses' List</h3>
+
+
+    <div class="mdl-dialog__content" id="drivers_cards">
+
+
+        <div id="LoadingDrivers" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+
+        <button class="mdl-button rgt" id="close_drivers_cards">CLOSE</button>
+
+    </div>
+
+</dialog>
+
+
+<dialog class="mdl-dialog mdl-js-dialog" id="createnurse" style="width:650px;overflow: auto">
+
+    <div class="mdl-dialog__title">
+        <h3>New nurse</h3>
+    </div>
+
+    <div class="mdl-dialog__content " id="npContents">
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="text" id="nurseName">
+            <label class="mdl-textfield__label" for="nurseName">nurse Name</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="number" id="nursePhone">
+            <label class="mdl-textfield__label" for="nursePhone">Partner Phone</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="email" id="nurseEmail">
+            <label class="mdl-textfield__label" for="nurseEmail">nurse Email</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="password" id="nursePassword">
+            <label class="mdl-textfield__label" for="nursePassword">nurse Password</label>
+        </div>
+
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="text" rows="3" id="section">
+            <label class="mdl-textfield__label" for="section">Symptoms Outwardly</label>
+        </div>
+
+
+        <div>
+            <div id="creatingPartner" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"
+                 style="display: none;"></div>
+            <p id="errLogs"></p>
+        </div>
+    </div>
+
+
+    <div class="mdl-dialog__actions">
+        <button class="mdl-button mdl-js-button" id="createBtn" type="submit">Add nurse</button>
+        <button class="mdl-button mdl-js-button" id="closeDialog">Close</button>
+    </div>
+
+
+</dialog>
+
+
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fly hover_ob_changer"
+        id="addnurseBtn">
+    <i class="material-icons">add</i>
+</button>
+
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored  topy hover_ob_changer"
+        id="reloadBtn">
+    <i class="material-icons">cached</i>
+</button>
+
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored  topy2 hover_ob_changer"
+        id="searchBtn">
+    <i class="material-icons">search</i>
+</button>
+
+<dialog class="mdl-dialog" id="searchDialog" style="width: 500px">
+    <h2 class="mdl-dialog__title" style="color: gray">
+        <i class="material-icons">search</i>
+        Find nurse
+    </h2>
+
+    <div class="mdl-dialog__content">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 450px">
+            <input class="mdl-textfield__input" type="text" id="nurseID">
+            <label class="mdl-textfield__label" for="nurseID">nurse ID</label>
+        </div>
+    </div>
+
+    <div class="mdl-dialog__actions">
+        <button class="mdl-button mdl-js-button mdl-button--colored" id="doSearch">Search</button>
+        <button class="mdl-button mdl-js-button mdl-button--accent" id="closeSearchDialog">Close</button>
+
+    </div>
+
+</dialog>
+
+<dialog class="mdl-dialog" id="nurseFound" style="width: 500px">
+    <h4 class="mdl-dialog__title" style="font-size: medium ; color: gray;">
+        <i class="material-icons">done</i>
+        nurse Founded
+    </h4>
+    <div class="mdl-dialog__content">
+        <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp">
+            <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Email</th>
+                <th class="mdl-data-table__cell--non-numeric">Phone</th>
+                <th class="mdl-data-table__cell--non-numeric">Section</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="mdl-data-table__cell--non-numeric" id="nurseNameTable"></td>
+                <td class="mdl-data-table__cell--non-numeric" id="nurseEmailTable"></td>
+                <td class="mdl-data-table__cell--non-numeric" id="nursePhoneTable"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mdl-card__actions">
+        <button class="mdl-button" id="closenurseFoundDialog">Close</button>
+    </div>
+</dialog>
+
+
+<script>
+    componentHandler.upgradeAllRegistered();
+
+
+    var searchDialog = document.querySelector('#searchDialog');
+    var nurseFound = document.querySelector('#nurseFound');
+
+    document.querySelector('#searchBtn').addEventListener('click', function () {
+        searchDialog.showModal();
+    })
+
+    searchDialog.querySelector('#closeSearchDialog').addEventListener('click', function () {
+        searchDialog.close();
+    })
+
+    nurseFound.querySelector('#closenurseFoundDialog').addEventListener('click', function () {
+        nurseFound.close();
+    })
+    searchDialog.querySelector('#doSearch').addEventListener('click', function () {
+
+        var id = searchDialog.querySelector('#nurseID');
+
+        var dataRef = firebase.database().ref('nurses/' + id.value);
+        dataRef.once('value').then(function (data) {
+
+
+            var pData = data.val();
+            if (pData != null) {
+                var name = pData.name;
+                var email = pData.email;
+                var phone = pData.phone;
+                nurseFound.querySelector('#nurseNameTable').innerHTML = name;
+                nurseFound.querySelector('#nursePhoneTable').innerHTML = phone;
+                nurseFound.querySelector('#nurseEmailTable').innerHTML = email;
+                nurseFound.showModal();
+            } else {
+                alert("No nurse with this id");
+            }
+
+        })
+
+
+    })
+
+
+    document.querySelector('#addnurseBtn').addEventListener('click', function () {
+
+        var formDialog = document.querySelector('#createnurse');
+
+        formDialog.showModal();
+        formDialog.querySelector('#closeDialog').addEventListener('click', function () {
+            formDialog.close();
+        })
+
+        formDialog.querySelector('#createBtn').addEventListener('click', function () {
+
+            document.querySelector('#creatingPartner').style.display = "block";
+            try {
+                var pName = document.querySelector('#nurseName').value;
+                var pPhone = document.querySelector('#nursePhone').value;
+                var pEmail = document.querySelector('#nurseEmail').value;
+                var pPassword = document.querySelector('#nursePassword').value;
+                var pSection = document.querySelector('#section').value;
+
+                if (pName != "" && pPhone != "" && pEmail != "" && pPassword != "" && pSection != "") {
+
+
+                    var config = {
+                        apiKey: "AIzaSyCnyLJxhf2KjScY1uW06Bt5GeAkfYM0_Iw",
+                        authDomain: "bioinformatics-27985.firebaseapp.com",
+                        databaseURL: "https://bioinformatics-27985.firebaseio.com",
+                        storageBucket: "bioinformatics-27985.appspot.com",
+                        messagingSenderId: "997743646871"
+                    };
+
+                    var secondaryApp = firebase.initializeApp(config, "Secondary");
+
+
+                    secoundApp = secondaryApp.auth().createUserWithEmailAndPassword(pEmail, pPassword).then(function (firebaseUser) {
+
+                        database = firebase.database().ref("nurses/" + firebaseUser.uid);
+                        var partnerData = {
+                            name: pName,
+                            email: pEmail,
+                            phone: pPhone,
+                            section: pSection
+                        };
+                        database.set(partnerData);
+
+                        secondaryApp.auth().signOut();
+                        firebase.app("Secondary").delete();
+
+                        alert("nurse's Profile Created Successfully");
+                        document.querySelector('#creatingPartner').style.display = "none";
+                        formDialog.close();
+                        //reload
+
+
+                    });
+
+                } else {
+                    document.querySelector('#errLogs').innerHTML = "Fill All Fields Please !";
+                    firebase.app("Secondary").delete();
+
+                }
+
+            } catch (err) {
+                document.querySelector('#errLogs').innerHTML = err.message;
+                try {
+                    firebase.app("Secondary").delete();
+                } catch (E) {
+                    //ignore
+
+                }
+            }
+
+
+        })
+
+
+    })
+
+
+    var dataRef = firebase.database().ref('nurses');
+    dataRef.once('value').then(function (data) {
+        data.forEach(function (datum) {
+
+            var parent = datum.val();
+            var key = datum.key;
+            var pName = parent.name;
+            var pPhone = parent.phone;
+            var pEmail = parent.email;
+
+            var RowElement = document.createElement('tr');
+            var idDatum = document.createElement('td');
+            idDatum.className = "mdl-data-table__cell--non-numeric";
+            var nameDatum = document.createElement('td');
+            nameDatum.className = "mdl-data-table__cell--non-numeric";
+            var phoneDatum = document.createElement('td');
+            phoneDatum.className = "mdl-data-table__cell--non-numeric";
+            var emailDatum = document.createElement('td');
+            emailDatum.className = "mdl-data-table__cell--non-numeric";
+
+            nameDatum.appendChild(document.createTextNode(pName));
+            idDatum.appendChild(document.createTextNode(key));
+            phoneDatum.appendChild(document.createTextNode(pPhone));
+            emailDatum.appendChild(document.createTextNode(pEmail));
+
+
+            RowElement.appendChild(nameDatum);
+            RowElement.appendChild(idDatum);
+            RowElement.appendChild(phoneDatum);
+            RowElement.appendChild(emailDatum);
+
+
+            componentHandler.upgradeElement(RowElement);
+
+            var tableBody = document.querySelector('#tableBodyNu');
+            tableBody.appendChild(RowElement);
+
+            componentHandler.upgradeElement(tableBody);
+
+        })
+
+    })
+
+    document.querySelector('#reloadBtn').addEventListener('click', function () {
+        $("#nurses").trigger("click");
+
+    })
+
+</script>
+
+</body>
+

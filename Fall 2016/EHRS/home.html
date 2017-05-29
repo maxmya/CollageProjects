@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/material.min.css"/>
+    <script defer src="js/material.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.amber-red.min.css"/>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+    <link rel="icon" href="images/logo.png">
+
+    <script src="js/Notify.js"></script>
+
+
+    <meta charset="UTF-8">
+    <title>Hosbitalia | Reception Panel</title>
+    <style>
+
+
+        .circletag {
+            display: block;
+            width: 90px;
+            height: 90px;
+            background: #E6E7ED;
+            -moz-border-radius: 90px;
+            -webkit-border-radius: 90px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .mdl-layout__drawer {
+            width: 400px;
+            left: -250px;
+        }
+
+        .mdl-layout__drawer.is-visible {
+            left: 0;
+        }
+
+        .dialog_sizer.mdl-dialog {
+            overflow: auto;
+            width: 650px;
+            height: 520px;
+        }
+
+        #notifications {
+            cursor: pointer;
+            position: fixed;
+            right: 0px;
+            z-index: 9999;
+            bottom: 0px;
+
+        }
+
+        .alert {
+            margin-bottom: 20px;
+            margin-right: 30px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .demo-card.mdl-card.alert {
+            min-height: 100px;
+            height: auto;
+            max-height: 120px;
+            min-width: 200px;
+            width: auto;
+            max-width: 300px;
+
+        }
+
+        .lefty {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        .hover-changer {
+            background-color: #FFC200 !important;
+        }
+
+        div.hover-changer:hover {
+            background-color: #00acc1 !important;
+        }
+
+
+    </style>
+
+</head>
+
+<body style="background: #faebd7">
+
+<div id="notifications"></div>
+
+<div id="ppUploaded" class="mdl-js-snackbar mdl-snackbar">
+    <div class="mdl-snackbar__text"></div>
+    <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+<dialog class=" dialog_sizer mdl-dialog" id="profile_Settings">
+    <div class="mdl-dialog__title">
+        <h3>Profile Settings</h3>
+    </div>
+
+    <div class="mdl-dialog__content" id="contents">
+
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="text" id="userNameUpdate">
+            <label class="mdl-textfield__label" for="userNameUpdate">Display Name</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="text" id="emailUpdate">
+            <label class="mdl-textfield__label" for="emailUpdate">Update User Email</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="password" id="passwordUpdate">
+            <label class="mdl-textfield__label" for="passwordUpdate">Update User Password</label>
+        </div>
+
+
+        <p>
+            <small>Hint : Make sure that picture is .jpg</small>
+        </p>
+
+        <p></p>
+        <div>
+            <div id="uploading" class="mdl-progress mdl-js-progress" style="display: none"></div>
+            <p id="sucss"></p>
+        </div>
+    </div>
+
+    <div class="mdl-dialog__actions">
+        <button class="mdl-button mdl-js-button" id="save">Save</button>
+        <button class="mdl-button mdl-js-button close">Close</button>
+    </div>
+
+</dialog>
+
+<dialog class="mdl-dialog" style="width: 500px;" id="reAuth">
+    <div class="mdl-dialog__title">
+        <h3>Check Authority <i class="material-icons">verified_user</i></h3>
+    </div>
+    <div class="mdl-dialog__content">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 500px">
+            <input class="mdl-textfield__input" type="password" id="reAuthPassword">
+            <label class="mdl-textfield__label" for="emailUpdate">Password</label>
+        </div>
+        <div id="checkingAuth" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"
+             style="display: none"></div>
+        <p style="color: red;" id="authERR"></p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button class="mdl-button mdl-js-button mdl-button--colored" id="authDone">Authenticate</button>
+    </div>
+</dialog>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <h3 class="mdl-layout-title welcomeTitle" id="welcomeTitle">Welcome</h3>
+            <script>
+                //change name here
+            </script>
+            <div class="mdl-layout-spacer"></div>
+            <h3 class="mdl-layout-title"><img src="images/logo.png" style="width: 50px;height: 50px ; margin-top: 15px">
+            </h3>
+            <h4 style="margin-top: 50px ; color: #E41456">
+                Hosbitalia
+            </h4>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Dashboard & Statistics</a>
+            <a href="#scroll-tab-2" class="mdl-layout__tab" id="patients">Patients</a>
+            <a href="#scroll-tab-3" class="mdl-layout__tab" id="doctors">Doctors</a>
+            <a href="#scroll-tab-6" class="mdl-layout__tab" id="nurse">Nurse</a>
+            <a href="#scroll-tab-8" class="mdl-layout__tab" id="department">Department</a>
+            <a href="#scroll-tab-4" class="mdl-layout__tab" id="logistics">Logistics</a>
+            <a href="#scroll-tab-5" class="mdl-layout__tab" id="accounting">Accounting</a>
+            <a href="#scroll-tab-7" class="mdl-layout__tab" id="rooms">Rooms</a>
+        </div>
+
+    </header>
+
+
+    <div class="mdl-layout__drawer drawerStyle">
+        <span class="mdl-layout-title" id="drawerName">
+            <img id="pp" class="circletag" src="images/nobody_m.original.jpg" style="margin: 20px">
+        </span>
+        <div class="mdl-navigation">
+            <a class="mdl-navigation__link" id="stngs">
+                <i class="material-icons">face</i>
+                PROFILE SETTINGS
+            </a>
+            <a class="mdl-navigation__link" id="out">
+                <i class="material-icons">power_settings_new</i>
+                SIGN OUT
+            </a>
+        </div>
+    </div>
+
+    <dialog class="mdl-dialog" id="loading">
+        <h4 class="mdl-dialog__title">Loading ...</h4>
+        <div class="mdl-dialog__content ">
+            <p>
+                Retrieving Patents's List
+            </p>
+            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+        </div>
+    </dialog>
+
+    <main class="mdl-layout__content" style="flex: 1 0 auto;">
+
+        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+            <div class="page-content">
+                <div id="dashboard_page"></div>
+
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+
+            <div class="page-content">
+                <div id="patientsPage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+            <div class="page-content">
+                <div id="doctorsPage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+            <div class="page-content">
+                <div id="logisticsPage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+            <div class="page-content">
+                <div id="accountingPage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+            <div class="page-content">
+                <div id="nursePage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-7">
+            <div class="page-content">
+                <div id="roomsPage"></div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-8">
+            <div class="page-content">
+                <div id="departmentPage"></div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="mdl-mini-footer" style="flex: 0 0 50px;">
+        <div class="mdl-mini-footer__left-section demo-footer">
+            <div class="mdl-logo">Hosbitalia &copy</div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a>About</a></li>
+                <li><a>Privacy & Terms</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+<script src="js/firebase_init.js"></script>
+
+</body>
+
+
+</html>
+
+
+<script>
+
+
+    document.querySelector('#patients').addEventListener('click', function () {
+
+        $(function () {
+            $("#patientsPage").load("patientsPage.html");
+        });
+    })
+
+    document.querySelector('#doctors').addEventListener('click', function () {
+
+        $(function () {
+            $("#doctorsPage").load("doctorsPage.html");
+        });
+    })
+
+    document.querySelector('#logistics').addEventListener('click', function () {
+
+
+        $(function () {
+            $("#logisticsPage").load("logisticsPage.html");
+        });
+
+    });
+
+    document.querySelector('#accounting').addEventListener('click', function () {
+
+
+        $(function () {
+            $("#accountingPage").load("accountingPage.html");
+        });
+
+
+    });
+
+    document.querySelector('#department').addEventListener('click', function () {
+        $(function () {
+            $("#departmentPage").load("departmentPage.html");
+        });
+    })
+
+    document.querySelector('#nurse').addEventListener('click', function () {
+        $(function () {
+            $("#nursePage").load("nursePage.html");
+        });
+    })
+
+    document.querySelector('#rooms').addEventListener('click', function () {
+        $(function () {
+            $("#roomsPage").load("roomsPage.html");
+        });
+    })
+</script>
+
+<script>
+    var outBtn = document.querySelector('#out');
+    outBtn.addEventListener('click', function () {
+
+        firebase.auth().signOut().then(function () {
+
+            window.location.replace("index.html");
+
+        }, function (error) {
+
+            //todo handel error
+        });
+
+    })
+
+
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (!user) {
+            window.location.replace("index.html");
+        }
+    });
+
+</script>
+<script src="js/notifications.js"></script>

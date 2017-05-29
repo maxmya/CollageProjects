@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JOGL">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Documents/JOGL2010/64/JOGL" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Documents/JOGL2010/64/JOGL" recursive="false" />
+  </library>
+</component>

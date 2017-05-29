@@ -1,0 +1,219 @@
+<link href="css/material.min.css">
+<head>
+    <style>
+
+
+        .mdl-layout__drawer {
+            width: 400px;
+            left: -250px;
+        }
+
+        .mdl-layout__drawer.is-visible {
+            left: 0;
+        }
+
+        .fly {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+
+        .topy {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 120px;
+            z-index: 900;
+        }
+
+        .cent {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rgt {
+            left: 89%;
+        }
+
+        .dialog_sizer {
+            overflow: auto;
+            height: 500px;
+            width: 850px;
+        }
+
+        .dialog_sizey {
+            overflow: auto;
+            width: 650px;
+        }
+
+        body.blocked {
+            overflow: auto;
+        }
+
+        .solve {
+            overflow: visible;
+        }
+
+        .hover_ob_changer {
+
+            opacity: 0.2;
+        }
+
+        button.hover_ob_changer:hover {
+
+            opacity: 1;
+
+        }
+
+        .mdl-card--horizontal {
+            flex-direction: column;
+            height: 1vh;
+            padding-left: 150px;
+            width: 100%;
+        }
+
+        .mdl-card--horizontal .mdl-card__media {
+            left: 0;
+            position: absolute;
+            width: 100px;
+        }
+
+        .mdl-card--horizontal .mdl-card__supporting-text {
+            flex: 1 1 auto;
+            width: auto;
+        }
+
+        .mdl-card--horizontal-2 {
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 0px;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__title {
+            align-items: flex-start;
+            flex-direction: column;
+            flex: 1 auto;
+            float: left;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__title-text {
+            align-self: flex-start;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__media {
+            flex: 0 auto;
+            float: right;
+            height: 112px;
+            margin: 16px 16px 0 0;
+            width: 112px;
+        }
+
+        .mdl-card--horizontal-2 .mdl-card__actions {
+            clear: both;
+            flex: 1 auto;
+        }
+
+        .al {
+            margin: 20px;
+        }
+
+        .imageSizer {
+            width: 150px;
+            height: 150px;
+        }
+
+        .topy2 {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 200px;
+            z-index: 900;
+        }
+
+    </style>
+</head>
+<table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp"
+       style="position: relative ; margin-left: auto ; margin-right: auto">
+    <thead>
+    <tr>
+        <th class="mdl-data-table__cell--non-numeric">Department Name</th>
+        <th class="mdl-data-table__cell--non-numeric">Doctors#</th>
+        <th class="mdl-data-table__cell--non-numeric">Patients#</th>
+        <th class="mdl-data-table__cell--non-numeric">Rooms#</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fly hover_ob_changer"
+        id="addDepartmentBtn">
+    <i class="material-icons">add</i>
+</button>
+
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored  topy hover_ob_changer"
+        id="reloadDepartments">
+    <i class="material-icons">cached</i>
+</button>
+<dialog class="mdl-dialog" style="width: 500px" id="newDep">
+    <h4 class="mdl-dialog__title">New Department</h4>
+    <div class="mdl-dialog__content">
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 400px">
+            <input class="mdl-textfield__input" type="text" id="departmentName">
+            <label class="mdl-textfield__label" for="departmentName">Department Name</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: 400px">
+            <input class="mdl-textfield__input" type="text" id="numberOfRooms">
+            <label class="mdl-textfield__label" for="numberOfRooms"># Rooms</label>
+        </div>
+
+    </div>
+    <div class="mdl-card__actions">
+        <button class="mdl-button mdl-button--colored" id="addNewDep">Add</button>
+        <button class="mdl-button mdl-button--accent" id="closeNewDep">Close</button>
+    </div>
+</dialog>
+<script>
+
+    componentHandler.upgradeAllRegistered();
+
+    var addDepDialog = document.querySelector('#newDep');
+
+    document.querySelector('#addDepartmentBtn').addEventListener('click', function () {
+        addDepDialog.showModal();
+    })
+
+    addDepDialog.querySelector('#closeNewDep').addEventListener('click', function () {
+        addDepDialog.close();
+    })
+
+    addDepDialog.querySelector('#addNewDep').addEventListener('click', function () {
+
+        var depName = addDepDialog.querySelector('#departmentName').value;
+        var depRooms = addDepDialog.querySelector('#numberOfRooms').value;
+
+
+        database = firebase.database().ref('departments');
+        var partnerData = {
+            dname: depName,
+            dRooms: depRooms
+        };
+        database.push().set();
+
+    })
+
+</script>

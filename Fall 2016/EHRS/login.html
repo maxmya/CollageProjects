@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="images/logo.png">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <meta charset="UTF-8">
+    <title>Hosbitalia</title>
+</head>
+<style>
+    body {
+        background: url("images/medical.jpg") no-repeat fixed center/cover;
+    }
+
+    .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hori {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .trans {
+        opacity: 0.9;
+    }
+
+    .taller {
+        height: 100%;
+    }
+
+</style>
+<body>
+
+<div class="mdl-card mdl-shadow--6dp centered trans  mdl-cell--6-col mdl-typography--text-center">
+
+    <div class="mdl-card__title" style="margin-left: auto;margin-right: auto">
+        <img src="images/logo.png" style="width: 80px ">
+        <h3 class="mdl-card__title-text" style="margin-bottom: 10px; font-size: 38px  ;margin-top: 20px; color: #E41456">Hosbitalia</h3>
+    </div>
+
+
+
+    <div class="mdl-card__supporting-text"style="margin-left: auto;margin-right: auto">
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+            <input class="mdl-textfield__input" type="email" id="email">
+            <label class="mdl-textfield__label" for="email">Email</label>
+        </div>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+
+            <input class="mdl-textfield__input" type="password" id="password">
+            <label class="mdl-textfield__label" for="password">Password</label>
+        </div>
+    </div>
+
+    <div class="mdl-card__actions mdl-card--border">
+        <button id="btn" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect">Login</button>
+    </div>
+
+</div>
+
+<dialog class="mdl-dialog" id="err_dialog">
+
+    <h4 class="mdl-dialog__title">ERROR</h4>
+    <div class="mdl-dialog__content">
+        <p id="err">
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" id="close" class="mdl-button">Dismiss</button>
+    </div>
+
+</dialog>
+
+<dialog class="mdl-dialog" id="loading">
+    <h4 class="mdl-dialog__title">Loading...</h4>
+    <div class="mdl-dialog__content ">
+        <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+    </div>
+</dialog>
+
+<script src="js/firebase_init.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>
